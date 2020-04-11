@@ -46,10 +46,10 @@ int main()
 	
 	while(1)
 		{
-			/*SET Pin C13*/
+			/*CLEAR Pin C13*/
 			GPIOC->BSRR = GPIO_Pin_13;
 			Delay(1000);
-			/*CLEAR Pin C13*/
+			/*SET Pin C13*/
 			GPIOC->BRR  = GPIO_Pin_13;
 			Delay(1000);
 		}
